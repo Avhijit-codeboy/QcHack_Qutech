@@ -27,4 +27,5 @@ Noise is inherent part of the current NISQ hardware. Our idea is to implement th
 
 
 Open Question
-For open question, we believe extending the procedure of the paper[Mario Mastani](https://www.researchgate.net/publication/337901106_Non-ambiguity_quantum_teleportation_protocol) for entanglement pair generation and communication can lead to a better protocol with no or very minimal classical communication required.
+
+For open question, we believe extending the procedure of the paper by [Mario Mastani](https://www.researchgate.net/publication/337901106_Non-ambiguity_quantum_teleportation_protocol) on Non-ambiguity teleportation protocol for entanglement pair generation and communication can lead to a better protocol with no or very minimal classical communication required.
