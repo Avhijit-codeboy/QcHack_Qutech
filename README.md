@@ -4,7 +4,8 @@
 `pip3 install squidasm==0.8.4 --extra-index-url https://pypi.netsquid.org`<br>
 3) `qne application create qkd alice bob`
 
-# Procedure for E91 communication protocol
+For Part 1 of the challenge, we have implemented E91 protocol. Below is the summary of how the protocol works.
+
 1) Making entangled bell state
 The source centre chooses the EPR pair(Entangled Bell State) |φ+⟩=(1/√2)(|00⟩+|11⟩), sends the first particle |φ+⟩₁ to Alice and second particle |φ+⟩₂ to Bob.
 
@@ -19,3 +20,11 @@ The group G₁ is used to detect whether there is an eavesdropping. To detect ea
 
 5)
 If the quantum channel is safe, G₂ can be used as the raw keys because Alice and Bob can receive the same measurements. Both Alice and Bob agree on that the measurement |0⟩ represents the classical bit 0, while the measurement |1⟩ represents the classical bit 1, and thus get their key string.
+
+Part 2
+ 
+Noise is inherent part of the current NISQ hardware. Our idea is to implement the protocol with for error correction. Surface code is a 2D error correcting code that can error correct both bit-flip and phase-flip errors and it is quite robust. It has the advantage that the size of the surface code can be varied based on the availability of number of physical qubits, thus can make use of available qubits to the maximum extent. Finding simulator results by extending our implementation of E91 protocol with surface code can be promising to work with NISQ computers.
+
+
+Open Question
+For open question, we believe extending the procedure of the paper[Mario Mastani](https://www.researchgate.net/publication/337901106_Non-ambiguity_quantum_teleportation_protocol) for entanglement pair generation and communication can lead to a better protocol with no or very minimal classical communication required.
