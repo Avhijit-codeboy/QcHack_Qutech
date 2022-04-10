@@ -4,7 +4,7 @@
 `pip3 install squidasm==0.8.4 --extra-index-url https://pypi.netsquid.org`<br>
 3) `qne application create qkd alice bob`
 
-#Procedure for E91 communication protocol
+# Procedure for E91 communication protocol
 1) Making entangled bell state
 The source centre chooses the EPR pair(Entangled Bell State) |φ+⟩=(1/√2)(|00⟩+|11⟩), sends the first particle |φ+⟩₁ to Alice and second particle |φ+⟩₂ to Bob.
 
